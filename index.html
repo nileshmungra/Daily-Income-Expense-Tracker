@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Income & Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Income & Expense Tracker</h1>
+        <form id="expenseForm">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="type" required>
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+            </select>
+            <button type="submit">Add</button>
+        </form>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <ul id="expenseList"></ul>
+        <p class="total">Total: $<span id="totalAmount">0</span></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
